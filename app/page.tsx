@@ -1,52 +1,60 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { generateClient } from "aws-amplify/data";
-import type { Schema } from "@/amplify/data/resource";
-import "./../app/app.css";
-import { Amplify } from "aws-amplify";
-import outputs from "@/amplify_outputs.json";
-import "@aws-amplify/ui-react/styles.css";
-
-Amplify.configure(outputs);
-
-const client = generateClient<Schema>();
-
-export default function App() {
-  const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
-
-  function listTodos() {
-    client.models.Todo.observeQuery().subscribe({
-      next: (data) => setTodos([...data.items]),
-    });
-  }
-
-  useEffect(() => {
-    listTodos();
-  }, []);
-
-  function createTodo() {
-    client.models.Todo.create({
-      content: window.prompt("Todo content"),
-    });
-  }
-
+export default function Home() {
   return (
-    <main>
-      <h1>My todos</h1>
-      <button onClick={createTodo}>+ new</button>
-      <ul>
-        {todos.map((todo) => (
-          <li key={todo.id}>{todo.content}</li>
-        ))}
-      </ul>
-      <div>
-        🥳 App successfully hosted. Try creating a new todo.
-        <br />
-        <a href="https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/">
-          Review next steps of this tutorial.
-        </a>
-      </div>
+    <>
+      <style>{`
+        main {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          width: 100vw;
+          margin: 0;
+          padding: 0;
+          gap: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+          main {
+            justify-content: flex-start;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+          }
+        }
+      `}</style>
+      <main>
+      <a 
+        href="https://wa.me/34666339982"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display: 'inline-block',
+          cursor: 'pointer'
+        }}
+      >
+        <img 
+          src="/logo-white.jpg" 
+          alt="Logo" 
+          style={{
+            maxWidth: '100%',
+            height: 'auto'
+          }}
+        />
+      </a>
+      <a 
+        href="https://wa.me/34666339982"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          color: '#25D366',
+          textDecoration: 'none',
+          fontSize: '1.2rem',
+          fontWeight: 'bold'
+        }}
+      >
+        666 339 982
+      </a>
     </main>
+    </>
   );
 }
