@@ -2,23 +2,37 @@ export default function Home() {
   return (
     <>
       <style>{`
-        body {
-          background-color: #3e3a37;
-          margin: 0;
-          padding: 0;
+        html, body {
+          background-color: #3e3a37 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          height: auto !important;
+          min-height: 100vh !important;
+          width: 100% !important;
+          overflow-x: hidden !important;
+          overflow-y: auto !important;
+          display: block !important;
         }
         
         main {
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
           min-height: 100vh;
-          width: 100vw;
+          width: 100%;
+          max-width: 100vw;
           margin: 0;
-          padding: 0;
+          padding: 2rem 0;
           gap: 2rem;
           background-color: #3e3a37;
+          box-sizing: border-box;
+        }
+        
+        @media (min-width: 769px) {
+          main {
+            padding: 3rem 0;
+          }
         }
         
         .icons-container {
@@ -46,6 +60,49 @@ export default function Home() {
         .phone-text {
           font-size: 1.6rem;
           font-weight: bold;
+          color: #e3e3e3;
+        }
+        
+        .services-section {
+          width: 100%;
+          max-width: 800px;
+          padding: 2rem;
+          margin-top: -1rem;
+        }
+        
+        .services-title {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #e3e3e3;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        
+        .services-list {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+        
+        .service-item {
+          background-color: rgba(227, 227, 227, 0.1);
+          padding: 1.5rem;
+          border-radius: 8px;
+          border: 1px solid rgba(227, 227, 227, 0.2);
+        }
+        
+        .service-item h3 {
+          font-size: 1.3rem;
+          font-weight: bold;
+          color: #e3e3e3;
+          margin: 0 0 0.5rem 0;
+        }
+        
+        .service-item p {
+          font-size: 1rem;
+          color: #e3e3e3;
+          margin: 0;
+          opacity: 0.9;
         }
         
         @media (max-width: 768px) {
@@ -73,11 +130,33 @@ export default function Home() {
           .phone-text {
             font-size: 1.2rem;
           }
+          
+          .services-section {
+            padding: 1.5rem 1rem;
+            margin-top: -0.5rem;
+          }
+          
+          .services-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+          }
+          
+          .service-item {
+            padding: 1rem;
+          }
+          
+          .service-item h3 {
+            font-size: 1.1rem;
+          }
+          
+          .service-item p {
+            font-size: 0.9rem;
+          }
         }
       `}</style>
       <main>
       <a 
-        href="https://wa.me/34666339982"
+        href="tel:+34666339982"
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -86,7 +165,7 @@ export default function Home() {
         }}
       >
         <img 
-          src="/logo-yellow.jpg" 
+          src="/logo-yellow.png" 
           alt="Logo" 
           style={{
             maxWidth: '100%',
@@ -117,8 +196,7 @@ export default function Home() {
             alignItems: 'center',
             gap: '1rem',
             cursor: 'pointer',
-            textDecoration: 'none',
-            color: 'inherit'
+            textDecoration: 'none'
           }}
         >
           <img 
@@ -131,6 +209,23 @@ export default function Home() {
           </span>
         </a>
       </div>
+      <section className="services-section">
+        <h2 className="services-title">Nuestros Servicios</h2>
+        <div className="services-list">
+          <div className="service-item">
+            <h3>Servicio de Taxi Regular</h3>
+            <p>Transporte local e interprovincial.</p>
+          </div>
+          <div className="service-item">
+            <h3>Servicios al Aeropuerto</h3>
+            <p>Servicio a los aeropuertos de O Porto, Vigo, y Santiago de Compostela.</p>
+          </div>
+          <div className="service-item">
+            <h3>Servicio 24 Horas</h3>
+            <p>Disponible las 24 horas del día, 7 días de la semana.</p>
+          </div>
+        </div>
+      </section>
     </main>
     </>
   );
