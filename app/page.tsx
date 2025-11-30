@@ -1,4 +1,26 @@
+"use client";
+
 export default function Home() {
+  const trackWhatsAppClick = () => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'WhatsApp',
+        value: 1
+      });
+    }
+  };
+
+  const trackPhoneClick = () => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'click', {
+        event_category: 'Contact',
+        event_label: 'Phone',
+        value: 1
+      });
+    }
+  };
+
   return (
     <>
       <style>{`
@@ -178,6 +200,7 @@ export default function Home() {
           href="https://wa.me/34666339982"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={trackWhatsAppClick}
           style={{
             display: 'inline-block',
             cursor: 'pointer'
@@ -191,6 +214,7 @@ export default function Home() {
         </a>
         <a 
           href="tel:+34666339982"
+          onClick={trackPhoneClick}
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -213,8 +237,8 @@ export default function Home() {
         <h2 className="services-title">Nuestros Servicios</h2>
         <div className="services-list">
           <div className="service-item">
-            <h3>Servicio de Taxi Regular</h3>
-            <p>Transporte local e interprovincial.</p>
+            <h3>Transporte local e interprovincial</h3>
+            <p>Zona de Ramirás, Celanova y su entorno.</p>
           </div>
           <div className="service-item">
             <h3>Servicios al Aeropuerto</h3>
