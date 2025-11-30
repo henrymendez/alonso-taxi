@@ -6,18 +6,18 @@ import "./app.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Alonso Taxi Nº5 | Taxi en Ramirás, Celanova y Ourense | Servicio 24h",
-  description: "Taxi profesional en Ramirás, Celanova y Ourense. Servicio 24 horas, viajes al aeropuerto (O Porto, Vigo, Santiago), transporte local e interprovincial. Alonso Taxi Nº5 - Tu taxi de confianza en Galicia.",
+  title: "Taxi Alonso Méndez -  Nº5 | Taxi en Ramirás, Celanova y Ourense | Servicio 24h",
+  description: "Taxi profesional en Ramirás, Celanova y Ourense. Servicio 24 horas, viajes al aeropuerto (O Porto, Vigo, Santiago), transporte local e interprovincial. Taxi Alonso Méndez Nº5 - Tu taxi de confianza en Galicia.",
   keywords: [
     "taxi Ramirás",
     "taxi Celanova",
     "taxi Ourense",
     "taxi 24 horas",
-    "Alonso Taxi",
+    "Taxi Alonso Méndez",
   ],
-  authors: [{ name: "Alonso Taxi Nº5" }],
-  creator: "Alonso Taxi Nº5",
-  publisher: "Alonso Taxi Nº5",
+  authors: [{ name: "Taxi Alonso Méndez Nº5" }],
+  creator: "Taxi Alonso Méndez - Nº5",
+  publisher: "Taxi Alonso Méndez Nº5",
   formatDetection: {
     email: false,
     address: false,
@@ -28,10 +28,10 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Alonso Taxi Nº5 | Taxi en Ramirás, Celanova y Ourense",
+    title: "Taxi Alonso Méndez Nº5 | Taxi en Ramirás, Celanova y Ourense",
     description: "Taxi profesional en Ramirás, Celanova y Ourense. Servicio 24 horas, viajes al aeropuerto, transporte local e interprovincial.",
     url: "https://alonso.taxi",
-    siteName: "Alonso Taxi Nº5",
+    siteName: "Taxi Alonso Méndez Nº5",
     locale: "es_ES",
     type: "website",
   },
