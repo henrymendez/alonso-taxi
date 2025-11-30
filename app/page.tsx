@@ -234,7 +234,7 @@ export default function Home() {
         </a>
       </div>
       <section className="services-section">
-        <h2 className="services-title">Nuestros Servicios</h2>
+        <h2 className="services-title">Servicios</h2>
         <div className="services-list">
           <div className="service-item">
             <h3>Transporte local e interprovincial</h3>
