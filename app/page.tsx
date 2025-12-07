@@ -90,6 +90,8 @@ export default function Home() {
           max-width: 800px;
           padding: 2rem;
           margin-top: -1rem;
+          border-top: 1px solid rgba(227, 227, 227, 0.2);
+          padding-top: 2rem;
         }
         
         .description-title {
@@ -178,6 +180,7 @@ export default function Home() {
           
           .description-section {
             padding: 1.5rem 1rem;
+            padding-top: 1.5rem;
             margin-top: -0.5rem;
           }
           
@@ -277,7 +280,7 @@ export default function Home() {
         <div className="services-list">
           <div className="service-item">
             <h3>Transporte local e interprovincial 🚕</h3>
-            <p>Zona de Ramirás, Celanova y su entorno.</p>
+            <p>Zona de Ramirás, Celanova y sus alrededores</p>
           </div>
           <div className="service-item">
             <h3>Servicios a los aeropuertos de la región️ ✈️</h3>
@@ -286,7 +289,7 @@ export default function Home() {
             <p>Santiago de Compostela (SCQ)</p>
           </div>
           <div className="service-item">
-            <h3>Servicio 24 Horas 🕘</h3>
+            <h3>Servicio 24/7 🕘</h3>
             <p>Disponible las 24 horas del día, 7 días de la semana.</p>
           </div>
         </div>
@@ -294,16 +297,16 @@ export default function Home() {
       <section className="description-section">
         <div className="description-content">
           <p>
-            Un servicio de taxi confiable y profesional que ofrece transporte de calidad 
-            en la zona de Ramirás, Celanova y su entorno. Garantizo un servicio de taxi seguro, puntual y cómodo para 
-            satisfacer todas sus necesidades de transporte.
+            Servicio de taxi confiable y profesional que ofrece transporte de calidad 
+            en la zona de Ramirás, Celanova y sus alrededores. Garantizo un servicio seguro, puntual y cómodo para 
+            todas sus necesidades.
           </p>
           <p>
-            Yo ofrezco traslados a los principales aeropuertos de la región.
+            Ofrezco traslados a los aeropuertos de la región.
             Aeropuertos de Porto (OPO), Vigo (VGO) y Santiago de Compostela (SCQ). 
           </p>
           <p>
-            Contáctame por teléfono o WhatsApp para reservar su viaje!
+            Contáctame por teléfono o WhatsApp para agendar tu viaje!
           </p>
         </div>
       </section>
