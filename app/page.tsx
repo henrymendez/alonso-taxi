@@ -152,6 +152,20 @@ export default function Home() {
           opacity: 0.9;
         }
         
+        .service-item .map-container {
+          margin-top: 1rem;
+          width: 100%;
+          border-radius: 8px;
+          overflow: hidden;
+        }
+        
+        .service-item iframe {
+          width: 100%;
+          height: 300px;
+          border: 0;
+          border-radius: 8px;
+        }
+        
         @media (max-width: 768px) {
           main {
             justify-content: flex-start;
@@ -215,6 +229,10 @@ export default function Home() {
           
           .service-item p {
             font-size: 0.9rem;
+          }
+          
+          .service-item iframe {
+            height: 250px;
           }
         }
       `}</style>
@@ -281,6 +299,14 @@ export default function Home() {
           <div className="service-item">
             <h3>Transporte local e interprovincial 🚕</h3>
             <p>Zona de Ramirás, Celanova y sus alrededores</p>
+            <div className="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116105.42545451889!2d-8.058568761862755!3d42.16479787910609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd255bbe1c53a4fd%3A0x151ef9d839465229!2sTerra%20de%20Celanova%2C%20Province%20of%20Ourense%2C%20Spain!5e0!3m2!1sen!2sus!4v1765148028816!5m2!1sen!2sus" 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
           <div className="service-item">
             <h3>Servicios a los aeropuertos de la región️ ✈️</h3>
