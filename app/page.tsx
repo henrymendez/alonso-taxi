@@ -85,6 +85,29 @@ export default function Home() {
           color: #e3e3e3;
         }
         
+        .description-section {
+          width: 100%;
+          max-width: 800px;
+          padding: 2rem;
+          margin-top: -1rem;
+        }
+        
+        .description-title {
+          font-size: 2rem;
+          font-weight: bold;
+          color: #e3e3e3;
+          text-align: center;
+          margin-bottom: 1.5rem;
+        }
+        
+        .description-content {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: #e3e3e3;
+          text-align: justify;
+          opacity: 0.95;
+        }
+        
         .services-section {
           width: 100%;
           max-width: 800px;
@@ -151,6 +174,22 @@ export default function Home() {
           
           .phone-text {
             font-size: 1.2rem;
+          }
+          
+          .description-section {
+            padding: 1.5rem 1rem;
+            margin-top: -0.5rem;
+          }
+          
+          .description-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+          }
+          
+          .description-content {
+            font-size: 1rem;
+            line-height: 1.6;
+            text-align: left;
           }
           
           .services-section {
@@ -234,20 +273,38 @@ export default function Home() {
         </a>
       </div>
       <section className="services-section">
-        <h2 className="services-title">Servicios</h2>
+        <h2 className="services-title">Servicios de Taxi Profesional</h2>
         <div className="services-list">
           <div className="service-item">
-            <h3>Transporte local e interprovincial</h3>
+            <h3>Transporte local e interprovincial 🚕</h3>
             <p>Zona de Ramirás, Celanova y su entorno.</p>
           </div>
           <div className="service-item">
-            <h3>Servicios al Aeropuerto</h3>
-            <p>Servicio a los aeropuertos de O Porto, Vigo, y Santiago de Compostela.</p>
+            <h3>Servicios a los aeropuertos de la región️ ✈️</h3>
+            <p>Porto (OPO)</p>
+            <p>Vigo (VGO)</p>
+            <p>Santiago de Compostela (SCQ)</p>
           </div>
           <div className="service-item">
-            <h3>Servicio 24 Horas</h3>
+            <h3>Servicio 24 Horas 🕘</h3>
             <p>Disponible las 24 horas del día, 7 días de la semana.</p>
           </div>
+        </div>
+      </section>
+      <section className="description-section">
+        <div className="description-content">
+          <p>
+            Un servicio de taxi confiable y profesional que ofrece transporte de calidad 
+            en la zona de Ramirás, Celanova y su entorno. Garantizo un servicio de taxi seguro, puntual y cómodo para 
+            satisfacer todas sus necesidades de transporte.
+          </p>
+          <p>
+            Yo ofrezco traslados a los principales aeropuertos de la región.
+            Aeropuertos de Porto (OPO), Vigo (VGO) y Santiago de Compostela (SCQ). 
+          </p>
+          <p>
+            Contáctame por teléfono o WhatsApp para reservar su viaje!
+          </p>
         </div>
       </section>
     </main>
