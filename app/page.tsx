@@ -110,6 +110,10 @@ export default function Home() {
           opacity: 0.95;
         }
         
+        .description-content p {
+          margin-bottom: 1rem;
+        }
+        
         .services-section {
           width: 100%;
           max-width: 800px;
@@ -196,6 +200,10 @@ export default function Home() {
             padding: 1.5rem 1rem;
             padding-top: 1.5rem;
             margin-top: -0.5rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: calc(100% - 2rem);
+            box-sizing: border-box;
           }
           
           .description-title {
@@ -207,6 +215,7 @@ export default function Home() {
             font-size: 1rem;
             line-height: 1.6;
             text-align: left;
+            padding: 0 0.5rem;
           }
           
           .services-section {
