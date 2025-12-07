@@ -7,12 +7,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Taxi Alonso Méndez -  Nº5 | Taxi en Ramirás, Celanova y Alrededores | Servicio 24h",
-  description: "Taxi profesional en Ramirás, Celanova y Alrededores. Servicio 24 horas, viajes al aeropuerto (O Porto, Vigo, Santiago), transporte local e interprovincial. Taxi Alonso Méndez Nº5 - Tu taxi de confianza en Galicia.",
+  description: "Taxi profesional en Ramirás, Celanova y Alrededores. Servicio 24 horas, viajes al aeropuerto (O Porto, Vigo, Santiago), transporte local e interprovincial.",
   keywords: [
+    "taxi",
     "taxi ramirás",
     "taxi celanova",
     "taxi 24 horas",
-    "Taxi Alonso Méndez",
+    "taxi Alonso Méndez",
   ],
   authors: [{ name: "Taxi Alonso Méndez Nº5" }],
   creator: "Taxi Alonso Méndez - Nº5",
