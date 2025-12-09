@@ -332,7 +332,7 @@ export default function Home() {
       <section className="description-section">
         <div className="description-content">
           <p>
-            Servicio de taxi confiable y profesional que ofrece transporte de calidad 
+            Servicio de taxi de 5 plazas. Confiable y profesional que ofrece transporte de calidad 
             en la zona de Ramirás, Celanova y sus alrededores. Garantizo un servicio seguro, puntual y cómodo para 
             todas sus necesidades.
           </p>
